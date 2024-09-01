@@ -171,7 +171,8 @@ function searchAr(sear, target) {
 
 document.write(
     "15. Array-da müəyyən ədədin olub-olmadığını tap: " +
-    searchAr([12, 44, 12, 12, 1, 13, 4], 4)
+    searchAr([12, 44, 12, 12, 1, 13, 4], 4) +
+    " <br> <br>"
 );
 
 // 16.Ədədlərin böyükdən kiçiyə sıralanması
@@ -185,4 +186,32 @@ document.write(
 function sorttem(temsr) {
     return temsr.sort((a, b) => b - a);
 }
-document.write('16. Ədədlərin böyükdən kiçiyə sıralanması: ')
+document.write('16. Ədədlərin böyükdən kiçiyə sıralanması: ' + sorttem([112, 12, 121, 23, 213, 323, 3, 13, 11, 11, 1]) +
+    " <br> <br>")
+
+// 17.Ədədlərin  kiçiyden böyüye sıralanması
+
+
+function litle(lit) {
+    return lit.sort((a, b) => a - b)
+}
+document.write('17. Ədədlərin  kiçiyden böyüye sıralanması: ' + litle([112, 12, 121, 23, 213, 323, 3, 13, 11, 11, 1]) + " <br> <br>")
+
+
+// 18.Array-da ən böyük ikinci ədədi tap
+
+function deyermMas(mas) {
+    const desys = [...mas].sort((a, b) => a - b)
+    return desys[1]
+}
+
+document.write("18. Array-da ən böyük ikinci ədədi tap: " + deyermMas([10, 40, 20, 50]) + "<br><br>")
+
+// 19. Array-da ən kiçik ikinci ədədi tap
+
+function dsa(asd) {
+    const desys = [...asd].sort((a, b) => b - a)
+    return desys[1]
+}
+
+document.write("18. Array-da ən kiçik ikinci ədədi tap: " + dsa([10, 40, 20, 50]) + "<br><br>")
